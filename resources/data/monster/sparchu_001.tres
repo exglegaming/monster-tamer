@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Monster" format=3 uid="uid://boh14t3ee2ct1"]
+
+[ext_resource type="Script" uid="uid://bg7mbndnr0ovg" path="res://scripts/resources/data/monsters/monster.gd" id="1_8vuby"]
+[ext_resource type="Resource" uid="uid://c2dg6f4ioe7fm" path="res://resources/data/creature/sparchu.tres" id="1_lpq7j"]
+
+[resource]
+script = ExtResource("1_8vuby")
+health = 10.0
+attack_stat = 2.0
+defense_stat = 2.0
+speed = 1.0
+creature = ExtResource("1_lpq7j")
+metadata/_custom_type_script = "uid://bg7mbndnr0ovg"

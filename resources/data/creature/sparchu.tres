@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Creature" format=3 uid="uid://c2dg6f4ioe7fm"]
+
+[ext_resource type="Script" uid="uid://dejni1t1keukr" path="res://scripts/resources/data/creature/creature.gd" id="1_n7et7"]
+
+[resource]
+script = ExtResource("1_n7et7")
+id = "sparchu"
+index_number = 1
+type = "Ground"
+level = 1
+name = "Sparchu"
+metadata/_custom_type_script = "uid://dejni1t1keukr"
