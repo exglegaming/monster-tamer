@@ -150,7 +150,8 @@ script = ExtResource("1_gmlin")
 [node name="Visuals" type="Node2D" parent="." unique_id=975930256]
 scale = Vector2(0.5, 0.5)
 
-[node name="Character" type="AnimatedSprite2D" parent="Visuals" unique_id=998906250]
+[node name="CharacterAnimatedSprite" type="AnimatedSprite2D" parent="Visuals" unique_id=998906250]
+unique_name_in_owner = true
 position = Vector2(-4, -64)
 sprite_frames = SubResource("SpriteFrames_75vfm")
 animation = &"walk_down"

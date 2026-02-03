@@ -1,13 +1,22 @@
-[gd_resource type="Resource" script_class="Monster" format=3 uid="uid://boh14t3ee2ct1"]
+[gd_resource type="Resource" script_class="Monster" format=3 uid="uid://da83f5k6q3i8q"]
 
 [ext_resource type="Script" uid="uid://bg7mbndnr0ovg" path="res://scripts/resources/data/monsters/monster.gd" id="1_8vuby"]
-[ext_resource type="Resource" uid="uid://c2dg6f4ioe7fm" path="res://resources/data/creature/sparchu.tres" id="1_lpq7j"]
+[ext_resource type="Texture2D" uid="uid://b8yo6xfg35n4n" path="res://assets/monsters/sprite7.png" id="1_lpq7j"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_65eve"]
+atlas = ExtResource("1_lpq7j")
+region = Rect2(27, 25, 44, 45)
 
 [resource]
 script = ExtResource("1_8vuby")
+id_number = 1
+name = "Sparchu"
+type = "Ground"
+image = SubResource("AtlasTexture_65eve")
+level = 5
 health = 10.0
 attack_stat = 2.0
-defense_stat = 2.0
-speed = 1.0
-creature = ExtResource("1_lpq7j")
+defense_stat = 1.0
+speed = 2.0
+has_evolution = true
 metadata/_custom_type_script = "uid://bg7mbndnr0ovg"
