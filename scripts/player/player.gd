@@ -6,18 +6,12 @@ const MOVE_LEFT: StringName = "move_left"
 const MOVE_RIGHT: StringName = "move_right"
 const MOVE_UP: StringName = "move_up"
 const MOVE_DOWN: StringName = "move_down"
-const WALK_LEFT: StringName = "walk_left"
-const WALK_RIGHT: StringName = "walk_right"
-const WALK_UP: StringName = "walk_up"
-const WALK_DOWN: StringName = "walk_down"
 
 @export var debug: bool = false
-
 @export_category("Movement Settings")
 @export var move_speed: float = 200.0
 
 var last_direction: Vector2 = Vector2.ZERO
-
 
 @onready var character: AnimatedSprite2D = %CharacterAnimatedSprite
 
@@ -40,12 +34,12 @@ func _move_player() -> void:
 func _update_animation(dir: Vector2) -> void:
 	if velocity != Vector2.ZERO:
 		if dir.x > 0:
-			character.play(WALK_RIGHT)
+			character.play(MOVE_RIGHT)
 		elif dir.x < 0:
-			character.play(WALK_LEFT)
+			character.play(MOVE_LEFT)
 		elif dir.y < 0:
-			character.play(WALK_UP)
+			character.play(MOVE_UP)
 		elif dir.y > 0:
-			character.play(WALK_DOWN)
+			character.play(MOVE_DOWN)
 	else:
 		character.stop()
