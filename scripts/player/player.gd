@@ -19,7 +19,7 @@ const WALK_DOWN: StringName = "walk_down"
 var last_direction: Vector2 = Vector2.ZERO
 
 
-@onready var character_animated_sprite: AnimatedSprite2D = %CharacterAnimatedSprite
+@onready var character: AnimatedSprite2D = %CharacterAnimatedSprite
 
 
 func _physics_process(_delta: float) -> void:
@@ -40,12 +40,12 @@ func _move_player() -> void:
 func _update_animation(dir: Vector2) -> void:
 	if velocity != Vector2.ZERO:
 		if dir.x > 0:
-			character_animated_sprite.play(WALK_RIGHT)
+			character.play(WALK_RIGHT)
 		elif dir.x < 0:
-			character_animated_sprite.play(WALK_LEFT)
+			character.play(WALK_LEFT)
 		elif dir.y < 0:
-			character_animated_sprite.play(WALK_UP)
+			character.play(WALK_UP)
 		elif dir.y > 0:
-			character_animated_sprite.play(WALK_DOWN)
+			character.play(WALK_DOWN)
 	else:
-		character_animated_sprite.stop()
+		character.stop()
